@@ -4,68 +4,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Eric Garcia's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />"
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    <div class="main">
-    <div class="nav">
-        <nav>
-            
-                <a href="#Home">Home </a><a href="#About">About </a><a href="#Work">Work </a><a href="#Contact">Contact </a>
+    <header>
+        <button class="nav-toggle" aria-label="toggle-navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My Specialties</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+            </ul>
         </nav>
-    </div>
+    </header> 
+    
+    
 
-    <section class="home" id="Home">
-        <div class="content">
-            <div class="hero">
-                <h1>Hello, I'm Eric Garcia</h1>
-                <div class="image"></div>
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hello, I'm <strong>Eric Garcia</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Front end and Back end dev</p>
+        <img src="images/Profile.jpeg" alt="picture of me" class="intro__img">
+    </section>
+
+
+
+    <section class="my--services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Design and Development</h3>
+                <p>I am able to perform basic web design and development with html, css, javascript and php. I also have a basic understanding of SQL if databases are something that you would like to use for your project.</p>
             </div>
+        </div>
+
+        <a href="#work" class="btn">My Work</a>
+    </section>
+
+
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">Web Designer and Developer from Indiana</p>
+
+        <div class="about-me__body">
+            <p>Hello, I'm Eric Garcia and I'm currently a relatively new web developer. I've been going to college for four years now and have a pretty good idea on how to make front end designs using html, css, scss, javascript and php. As well as using SQL to perform database functions. In my work I break it down into set pieces and give myself a deadline to have that particular piece done by. I also do my best to problem solve on my own before going to my peers for help and am willing to put in extra work when it is required for a project.</p>
+            <p>Some of my hobbies include reading books, writing short stories, drawing on my tablet and going for walks through parks and other outdoor areas. I also am an avid game player and enjoy learning about the behind the scenes of them and for movie special effects. </p>
+        </div>
+
+        <img src="images/IMG_2896.jpeg" alt="photo of me" class="about-me__img">
+    </section>
+
+
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My Work</h2>
+        <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+        <div class="portfolio">
+            <a href="#" class="portfolio__item">
+                <img src="images/Work1-1.png" alt="" class="portfolio--img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="images/Work1-2.png" alt="" class="portfolio--img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="images/Work1-3.png" alt="" class="portfolio--img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="images/Work1-4.png" alt="" class="portfolio--img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="images/Work1-5.png" alt="" class="portfolio--img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="images/Work2-1.png" alt="" class="portfolio--img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="images/Work2-2.png" alt="" class="portfolio--img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="images/Work2-3.png" alt="" class="portfolio--img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="images/Work2-4.png" alt="" class="portfolio--img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="images/Work2-5.png" alt="" class="portfolio--img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="images/Work2-6.png" alt="" class="portfolio--img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="images/Work3-1.png" alt="" class="portfolio--img">
+            </a>
+            
         </div>
     </section>
 
-    <section class="about" id="About">
-        <div class="aboutme">
-            <div class="me">
-                <h2>About Me</h2>
-                    <p>I am currently a student at IUPUI and avid fan of many things nerd culture, I spend my time learning how to better perform at coding and finding new and fun things to geek out over. My main focus is learning how to perform better with my code and play games. My biggest hope is to collaborate with and learn from more experienced coders and also become a larger part in designing websites. I'm always looking for new ways to learn and what I can teach myself. </p>
 
-            </div>
-        </div>
-    </section>
+    <footer class="footer">
+        <a href="mailto:egarcia20182020" class="footer__link">egarcia20182020@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
 
-    <section class="work" id="Work">
-        <div class="prework">
-                <h4>My Work</h4>
-                <p>Most of my coding work has been done through school in various projects and assignments. I have worked in groups of people before to create larger database websites, sales websites, and basic image gallery pages. Otherwise alot of my work was very hands on non coding work through working at facotories and some customer service. I am capable of working well with others and provide ideas when needed. </p>
-                <p>I have worked with PHP, css, scss, html, and javascript and have began to work more with SQL. My main focus is creating front end designs that people will find appealing and companies will feel fits their brand and market. 
-                    An example of my recent work is below. 
-                </p>
-                    <div class="pre-work">
-                        <div class="image-1"></div>
-                        <div class="image-2"></div>
-                        <div class="image-3"></div>
-                        <div class="image-4"></div>
-                        <div class="image-5"></div>
-                    </div>
-            </div>
-    </section>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+            </li>
+        </ul>
+    </footer>
 
-    <section class="contact" id="Contact"> 
-        <div class="info">
-            <div class="info-links">
-                <div class="phone">
-                <h3>Contact Me</h3>
-                <p>Email: egarcia20182020@gmail.com<br>
-                   Cell Phone: 574-825-3795<br>
-                   LinkedIN: https://www.linkedin.com/in/eric-garcia-5718981b8/
-
-                </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    </div>
+    <script src="js/index.js"></script>
 </body>
 </html>
